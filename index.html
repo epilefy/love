@@ -47,40 +47,44 @@ H1{text-align:center;
     #verm{text-align:center;
 Color:RGB(255,80,0);
     }
-    
-    div.scrollmenu {
-      position: fixed;
-  text-align:center;    
-  background-color: #333;
-  overflow: auto;
-  white-space:nowrap;
+    #wrapper {
+    min-height: 100%;
+    position: relative;
 }
-
-div.scrollmenu a {
-  margin-top: -5px;
-  position: fixed;
-  top: 1px;   
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+#container {
+    background: red;
+    padding-bottom: 80px;
+    overflow: hidden;
 }
-
-div.scrollmenu a:hover {
-  background-color: #777;
+#content {
+    background: blue;
+    width: 1000px;
+    margin: 0 auto;
+}
+header {
+    height: 52px;
+    background: black;
+}
+header div {
+    width: 1000px;
+    background: red;
+    height: 52px;
+    margin: 0 auto;
+}
   
-}
 
     </style>
  
    
-  <body>
-  <div class="scrollmenu">
- <a href="#" class="active">Home 🏠</a>
- <a href="#dia">Dia dos namorados ❤</a>
- <a href="#hist">Nossa história ❤</a>
-</div>
+  <body><div id="wrapper">
+            <div id="container">
+                <header>
+                    <div></div>
+                </header>
+                <div id="content"></div><!--content-->
+            </div><!--container-->
+</div><!--wrapper-->
+
      <div class = "tit">
        
       
